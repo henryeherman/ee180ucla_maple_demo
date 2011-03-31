@@ -40,6 +40,24 @@
 #define	MEASURE		(1<<3)	//Measurement Mode
 #define AUTO_SLP	(1<<4)	//Auto Sleep Mode bit
 #define LINK		(1<<5)	//Link bit
+#define	OVERRUN		(1<<0)
+#define	WATERMARK	(1<<1)
+#define FREE_FALL	(1<<2)
+#define	INACTIVITY	(1<<3)
+#define	ACTIVITY	(1<<4)
+#define DOUBLE_TAP	(1<<5)
+#define	SINGLE_TAP	(1<<6)
+#define	DATA_READY	(1<<7)
+
+//Data Format Bits
+#define RANGE_0		(1<<0)
+#define	RANGE_1		(1<<1)
+#define JUSTIFY		(1<<2)
+#define	FULL_RES	(1<<3)
+
+#define	INT_INVERT	(1<<5)
+#define	SPI		(1<<6)
+#define	SELF_TEST	(1<<7)
 
 
 int sda = 9;
